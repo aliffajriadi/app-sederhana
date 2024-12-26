@@ -1,0 +1,35 @@
+<div class="col-md-10 p-5 pt-2">
+    <h3><i class="fa fa-user-graduate me-2"></i> Daftar Mahasiswa</h3>
+    <hr>
+    <button type="button" class="btn btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#tambahDataModal"> <i
+            class="fa fa-plus-circle me-2"></i>TAMBAH DATA MAHASISWA
+    </button>
+    |
+    <!-- Hodal Tambah Data -->
+    <div class="modal fade" id="tambahDataModal" tabindex="-1" aria-labelledby="tambahDataLabel" aria-hidden="true" <div
+        class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="tambahDataLabel">Tambah Data Mahasiswa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="tambah_mhs.php" method="POST">
+                    <div class="mb-3">
+                        <label for="nim" class="form-label">NIM</label>
+                        <input type="text" class="form-control" id="nim" name="nim" required> </div>
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama Mahasiswa</label>
+                        <input type="text" class="form-control" id="nama" name="nama" required> </div>
+                    <div class="mb-3">
+                        <label for="jurusan" class="form-label">Jurusan</label>
+                        <input type="text" class="form-control" id="jurusan" name="jurusan" required> </div>
+                    <div class="mb-3">
+                        <label for="angkatan" class="form-label">Angkatan</label>
+                        <input type="text" class="form-control" id="angkatan" name="angkatan" required> </div>
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
